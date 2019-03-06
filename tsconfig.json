@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
+    "downlevelIteration": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2015", "dom"]
+  }
+}
