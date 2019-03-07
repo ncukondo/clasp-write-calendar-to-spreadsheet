@@ -1,15 +1,9 @@
-import { SheetService } from './sheet.service';
 import { isHoliday, getHolidayName, getHolidayDateList } from './lib/holiday-utils-gcal';
 import { testSpreadSheetToExcelAttachment } from './spreadSheetToExcelAttachment';
 import { CalendarWriter } from './write-calendar-to-sheet';
 import { createTemplateCalendars } from './create-template-calendars';
 
 declare var global: any;
-
-global.createNewFile = (): void => {
-  const ss = SheetService.createInitialFile(`New file`);
-  ss.getRange('A2').setValue('Happy gas!');
-};
 
 global.isHoliday = isHoliday;
 global.getHolidayName = getHolidayName;
